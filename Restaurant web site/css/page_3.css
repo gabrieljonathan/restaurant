@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.border {
+ 
+    background: rgba(24, 117, 179, 0.877);
+    height: 80px;
+    
+
+}
+body {
+    background-color:rgb(87, 165, 218);
+}
+
+a{
+    text-decoration: none;
+}
+header .menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: ivory;
+    padding: 8px 12px;
+    border-radius: 3%;
+    transition: 200ms;
+}
+header .menu .active, header .menu a:hover{
+    color: rgb(255, 255, 255);
+}
+.main{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+main, .content{
+margin: 0 auto;
+width: 700px;
+position: relative;
+
+    
+    
+}
+.col-100 {
+    width: 100%;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.content, h1 {
+    
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+.content, h2 {
+    
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+.content, h3 {
+    
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+
+
+.content, p{ 
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: justify;
+    text-align: center;
+
+}
+footer{
+    
+    padding: 60px;
+  
+}
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+    

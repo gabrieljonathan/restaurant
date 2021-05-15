@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.border {
+ 
+    background: rgba(24, 117, 179, 0.877);
+    height: 80px;
+    
+
+}
+body {
+    background-color:rgb(87, 165, 218);
+}
+
+a{
+    text-decoration: none;
+}
+header .menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: ivory;
+    padding: 8px 12px;
+    border-radius: 3%;
+    transition: 200ms;
+}
+header .menu .active, header .menu a:hover{
+    color: rgb(255, 255, 255);
+}
+.main{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+main, .content{
+margin: 0 auto;
+width: 700px;
+position: relative;
+
+    
+    
+}
+.col-100 {
+    width: 100%;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.content, h1 {
+    
+    font-size: 38px;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 2;
+
+}
+.content, h2 {
+    
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+.content, h3 {
+    
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+.content, h4 {
+    
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+.content, p{ 
+    font-size: 20px;
+    line-height: 1.75;
+    text-align: justify;
+    text-align: center;
+
+}
+footer{
+    
+    padding: 60px;
+}
+ table, th, td {
+            
+       
+        align-items: center;
+        border: 1px solid black;
+    
+        }
+
+        th, td {
+            padding: 8px;
+        }
+        
+        table {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 12px;
+            width: 400px;
+        }
+
+        table th {background-color: rgba(161, 179, 177, 0.938); }
+        td.total {background-color: lightgrey; }
+        .center {text-align: center; }

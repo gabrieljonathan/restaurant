@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head Lang="en">
+<meta charset="utf-8">
+    <meta none="viewport" content="width-device-width, initial-scale1.0">
+    <link href="C:\Users\Gabriel\Desktop\Restaurant web site\css\page_1.css" rel="stylesheet"> 
+
+   <title>html</title> 
+    
+</head> 
+<body >
+  <header>
+    <!--main bar and menus-->
+    
+    <div class="border" >
+
+      <nav class="menu">
+          <a>CCT College Dublin</a> 
+          <ul>
+            <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\index.html" class="active">Home</a></li>
+             <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\pag_2.html" class="active">Menu</a></li>
+             <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\caa pag 3.html" class="active">Extra</a></li>                    
+         </ul>   
+      </nav>
+  </div> 
+  <!-- random users -->
+    <h2>Customer Profiles </h2>
+    <h3>Welcome. Below you can see a button that generates information about our customers. It is possible to view 5 profiles per click.</h3>
+    <h3>Let's test it!</h3>
+    
+  <div class="content">
+      <h3 class="display-4 mb-4"></h3>
+  <div class="d-flex"></div>
+      
+      <button class="btn btn-info mr-4" id="getRandom">Get Customer</button>
+      
+      <div id="output"></div>
+  </div>
+</div>
+
+</div>  
+
+
+   
+  <!--password validation--> 
+  <div class="col-100">
+    <div class="content">        
+        <footer></footer> 
+        <h2>Staff Password Validation</h2>
+        <h3>This is a password validator, used by our staff to register the password of the new Staffs</h3>
+        <h3>Let's make a simulation. Choose a random username and register a password that meets the requirements</h3>
+        <h3>(When filled with all the password requirements, clicking on "Submit" will take you to our Menu)</h3>
+        <div class="container">
+            <form action="C:\Users\Gabriel\Desktop\Ca1 HTML CSP\pag_2.html">
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname" name="usrname" required>
+
+                <label for="psw">Password</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+            <input type="submit" value="Submit">
+      </div>
+      <div id="message">
+        <h2>Password must contain the following:</h2>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        <!--verifications-->
+      </div>
+       
+      <footer></footer>
+<!--password validation--> 
+
+  </section>
+</header>
+
+
+
+
+
+<!--password validator JAVA-->
+<script>
+  var myInput = document.getElementById("psw");
+  var letter = document.getElementById("letter");
+  var capital = document.getElementById("capital");
+  var number = document.getElementById("number");
+  var length = document.getElementById("length");
+  
+  // When the user clicks on the password field, show the message box
+  myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+  }
+  
+  // When the user clicks outside of the password field, hide the message box
+  myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+  }
+  
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {  
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+    }
+    
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {  
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
+    }
+  
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {  
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
+    }
+    
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+  }
+  
+  
+</script>
+   
+<!--randon JAVA-->
+<script>
+   //button
+  document.getElementById('getRandom').addEventListener('click', getRandom);
+  //where it gets the information to be displayed
+  function getRandom(){
+      fetch('https://randomuser.me/api/?results=5')
+      .then((res) => res.json())
+      .then((data) => {
+          
+          let author = data.results;
+          let output = '<h2>Customer:</h2>'
+          console.log(data);
+          //data loop through
+          author.forEach(function(user){
+              output += `
+              <div>
+                  <ul>
+                      <li><img src=${user.picture.large}>  </li>
+                      <li>${"Name:"} ${user.name.first} ${user.name.last}</li>
+                      <li>${"Email:"} ${user.email} </li>  
+                      <li>${"Phone Number:"} ${user.phone} </li>
+                      <li>${"City:"} ${user.location.city}
+                                         
+                  </ul>
+              </div>
+              `;
+              //attributes to be displayed
+          });
+
+          document.getElementById('output').innerHTML = output;
+
+      })
+  }
+</script>     
+</body>  

@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+    /*border background*/
+    .border {
+ 
+        background: rgba(24, 117, 179, 0.877);
+        height: 80px;
+        
+    
+}
+/*Main background*/
+    body {
+        background-color:rgb(87, 165, 218);
+    }
+
+a{
+    text-decoration: none;
+}
+/*style menu bar and main */
+header .menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: ivory;
+    padding: 8px 12px;
+    border-radius: 3%;
+    transition: 200ms;
+}
+header .menu .active, header .menu a:hover{
+    color: rgb(255, 255, 255);
+}
+.main{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+main, .content{
+margin: 0 auto;
+width: 700px;
+position: relative;
+
+    
+    
+}
+/*style for text*/
+.col-100 {
+    width: 100%;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+/*style for h1 text*/
+.content, h1 {
+    
+    font-size: 38px;
+    text-align: center;
+    line-height: 2;
+
+}
+/*style for h2 text*/
+.content, h2 {
+    
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+/*style for h3 text*/
+.content, h3 {
+    
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2;
+
+}
+/*style for p text*/
+.content, p{ 
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.75;
+    text-align: justify;
+    text-align: center;
+
+}
+/*created for spacing*/
+footer{
+    padding: 60px;
+}
+/* verifier */
+table, th, td {
+         border: 1px solid rgb(70, 69, 69);
+     }
+
+     th, td {
+         padding: 6px;
+     }
+     
+     table {
+         font-family: Verdana, Geneva, sans-serif;
+         font-size: 12px;
+         width: 400px;
+         
+     
+ 
+     }       
+     
+  /* Style all input fields */
+    input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04aa6d9d;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color:  rgb(102, 98, 98);
+    padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #ffffff;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color:rgba(255, 0, 0, 0.61) ;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+
+    table th {background-color: rgba(255, 0, 0, 0.61) ; }
+    td.total {background-color:  #04aa6d9d; }
+    .center {text-align: center; }

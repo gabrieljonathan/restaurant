@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" href="C:\Users\Gabriel\Desktop\Restaurant web site\css\page_3.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <header>
+        <!--main bar and menus-->
+        <div class="border" >
+
+            <nav class="menu">
+                <a>CCT College Dublin</a>  
+                <ul>
+                  <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\index.html" class="active">Home</a></li>
+                  <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\pag_2.html" class="active">Menu</a></li>
+                  <li><a href="C:\Users\Gabriel\Desktop\Restaurant web site\caa pag 3.html" class="active">Extra</a></li>
+            </nav>
+        </div>  
+        <!--main bar and menus end-->
+<body>
+    <h1>Memory Game</h1><br/>
+    <h3> Before you go, how about having fun in our new game? </h3><br/>
+    <h3> In this game you will find some of the items on our menu, 
+        and great to play with children and arouse their curiosity </h3><br/>
+  
+  
+    <section class="memory-game">
+        <!--front and back face from onion 1/2 card-->
+    <div class="memory-card" data-framework="Bloomin Onion">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_1.png" alt="Bloomin Onion" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from onion 2/2 card-->
+    <div class="memory-card" data-framework="Bloomin Onion">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_1.png" alt="Bloomin Onion" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from fries 1/2 card-->
+    <div class="memory-card" data-framework="Aussie Chesse Fries">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_3.png" alt="Aussie Chesse Fries" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from fries 2/2 card-->
+    <div class="memory-card" data-framework="Aussie Chesse Fries">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_3.png" alt="Aussie Chesse Fries" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from nachos 1/2 card-->
+    <div class="memory-card" data-framework="Jack Nachos">
+        <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_2.png" alt="Jack Nachos" />
+        <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from 2/2 card-->
+    <div class="memory-card" data-framework="Jack Nachos">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_2.png" alt="Jack Nachos" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+        <!--front and back face from 1/2 card-->
+    <div class="memory-card" data-framework="Ribs Double Decker">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_11.png" alt="Ribs Double Decker" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+        <!--front and back face from 2/2 card-->
+    <div class="memory-card" data-framework="Ribs Double Decker">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_11.png" alt="Ribs Double Decker" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+        <!--front and back face from 1/2 card-->
+    <div class="memory-card" data-framework="Veggie Blue Cheese Burguer">
+        <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_5.png" alt="Veggie Blue Cheese Burguer" />
+        <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="JS Badge" />
+      </div>
+      <!--front and back face from 2/2 card-->
+      <div class="memory-card" data-framework="Veggie Blue Cheese Burguer">
+        <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_5.png" alt="Veggie Blue Cheese Burguer" />
+        <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="JS Badge" />
+      </div>
+      <!--front and back face from 1/2 card-->
+    <div class="memory-card" data-framework="Havanna Thunder">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_12.png" alt="Havanna Thunder" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    <!--front and back face from 2/2 card-->
+    <div class="memory-card" data-framework="Havanna Thunder">
+      <img class="front-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\Screenshot_12.png" alt="Havanna Thunder" />
+      <img class="back-face" src="C:\Users\Gabriel\Desktop\Restaurant web site\img\game ca.png" alt="Gabriel Game" />
+    </div>
+    </header>
+  </section>
+
+  <script>
+      const cards = document.querySelectorAll('.memory-card');
+
+        let hasFlippedCard = false;
+        let lockBoard = false;
+        let firstCard, secondCard;
+
+        function flipCard() {
+        if (lockBoard) return;
+        if (this === firstCard) return;
+
+        this.classList.add('flip');
+
+        if (!hasFlippedCard) {
+            hasFlippedCard = true;
+            firstCard = this;
+
+            return;
+        }
+
+        secondCard = this;
+        checkForMatch();
+        }
+
+        function checkForMatch() {
+        let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+        isMatch ? disableCards() : unflipCards();
+        }
+
+        function disableCards() {
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+
+        resetBoard();
+        }
+
+        function unflipCards() {
+        lockBoard = true;
+
+        setTimeout(() => {
+            firstCard.classList.remove('flip');
+            secondCard.classList.remove('flip');
+
+            resetBoard();
+        }, 1500);
+        }
+
+        function resetBoard() {
+        [hasFlippedCard, lockBoard] = [false, false];
+        [firstCard, secondCard] = [null, null];
+        }
+
+        (function shuffle() {
+        cards.forEach(card => {
+            let randomPos = Math.floor(Math.random() * 12);
+            card.style.order = randomPos;
+        });
+        })();
+
+        cards.forEach(card => card.addEventListener('click', flipCard));
+  </script>
+
+
+</html>
